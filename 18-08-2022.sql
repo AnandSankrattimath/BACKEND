@@ -35,7 +35,7 @@ print @Nchar
 print datalength(@Nchar)
 print len(@Nchar)
 
-declare @QualificationDetails varchar(8000) = 'SSLC -- 2012, PUC -- 2014, Degree -- 2017 -- BCA -- RaniChannammaUniversityBelgaum, Master -- 2019 -- MCA -- Reva_University_Bangalore'
+declare @QualificationDetails varchar(200) = 'SSLC -- 2012, PUC -- 2014, Degree -- 2017 -- BCA -- RaniChannammaUniversityBelgaum, Master -- 2019 -- MCA -- Reva_University_Bangalore'
 print @QualificationDetails
 print datalength(@QualificationDetails)
 print len(@QualificationDetails)
