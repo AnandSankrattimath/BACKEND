@@ -50,3 +50,5 @@ print GETDATE()- @DOB
 
 declare @DOB date = '1996-05-31'
 print YEAR(@DOB)
+print Month(@DOb)
+print Day(@DOB)
