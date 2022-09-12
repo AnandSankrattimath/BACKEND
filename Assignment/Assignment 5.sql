@@ -21,5 +21,12 @@ ROW_NUMBER() OVER (PARTITION BY DP.ProductName ORDER BY FS.salesAmount DESC) AS 
 FROM dbo.DimProduct AS DP INNER JOIN dbo.FactSales AS FS ON DP.ProductKey = FS.ProductKey
 WHERE DP.ProductName LIKE '%420%' AND FS.SalesAmount > 20000
 
-
 --Assignment 5.3
+SELECT dbo.DimProductCategory.ProductCategoryDescription,
+CASE
+WHEN dbo.DimProductCategory.ProductCategoryName LIKE '%Music, Movies and Audio Books%'
+THEN 'Youtube'
+END
+FROM
+dbo.DimProductCategory
+

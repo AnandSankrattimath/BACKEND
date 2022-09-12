@@ -11,10 +11,8 @@ SELECT * FROM dbo.DimStore;
 
 --Assignment 4.2
 --InnerJoin OR JOIN
-SELECT GeoTB.CityName,GeoTB.ContinentName,GeoTB.GeographyKey,StoreTB.GeographyKey AS GeoKeyInStore,StoreTB.StoreName 
-FROM dbo.DimGeography AS GeoTB 
- JOIN dbo.DimStore AS StoreTB
-ON GeoTB.GeographyKey=StoreTB.GeographyKey;
+
+
 
 --LEFT JOIN OR LEFT OUTER JOIN
 SELECT GeoTB.CityName,GeoTB.ContinentName,GeoTB.GeographyKey,StoreTB.GeographyKey as GeoKeyInStore,StoreTB.StoreName 

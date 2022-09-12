@@ -12,7 +12,7 @@ DROP TABLE dbo.tblStudent;
 
 
 --Assignment 3.3
-IF  EXISTS(SELECT NAME FROM sys.tables)
+IF NOT EXISTS(SELECT NAME FROM sys.tables)
 BEGIN
 CREATE TABLE tblEmployee(
 EmpId INT PRIMARY KEY,
